@@ -1,0 +1,91 @@
+// for each item i'll give some size
+
+.movie{
+    width: 240px;
+    height: 120px; 
+    background-color: var(--main-color);
+    margin-right: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    video{
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    &:hover{
+        width: 320px;
+        height: 300px;
+        position: absolute;
+        top: -150px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.08);
+        box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.08);
+        border-radius: 5px;
+
+
+        // if you hover these will also be affected
+        img{
+            height: 140px;
+        }
+    }
+    .movieInfo{
+
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+     
+
+        .icons{
+            color: white;
+            display: flex;
+            margin-bottom: 10px;
+
+            .icon{
+                border: 1px solid white;
+                padding: 5px;
+                border-radius: 50%;
+                margin-right: 10px;
+                font-size: 16px;
+            }
+        }
+
+        .movieInfoTop{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: gray;  
+
+            .ageLimit{
+                border: 1px solid gray;
+                padding: 1px 3px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        .desc{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .genre{
+            font-size: 14px;
+            color: lightgray ;
+        }
+
+    }
+}
