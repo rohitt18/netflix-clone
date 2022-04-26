@@ -1,0 +1,32 @@
+.productList {
+  flex: 4;
+  padding: 20px;
+}
+
+.productListItem {
+  display: flex;
+  align-items: center;
+}
+
+.productListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.productListEdit {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+
+.productListDelete {
+  color: #d95087;
+  cursor: pointer;
+}

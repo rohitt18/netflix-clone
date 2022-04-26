@@ -1,0 +1,45 @@
+.sidebar {
+  flex: 1;
+  /* height: 100vh; */
+  background-color: rgb(251, 251, 255);
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 13px;
+  color: rgb(177, 177, 177);
+}
+
+.list {
+  list-style: none;
+  padding: 5px; /* bec pehle se default padding hota hai list ka*/
+}
+
+.listItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.listItem.active,
+.listItem:hover {
+  background-color: rgb(240, 240, 255);
+}
+
+.Icon {
+  margin-right: 5px;
+  /* for changing the size of a materialIcon you need to add a suffix !important */
+  font-size: 20px !important;
+}

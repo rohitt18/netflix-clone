@@ -1,0 +1,58 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: white; /* v imp */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarWrapper {
+  height: 100%; /* which would be 50px as its the child of the topbar */
+  padding: 0px 20px; /* from top & bottom 0px, from left & right 20px */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #555;
+}
+
+.iconBadge {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.topAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
